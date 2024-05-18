@@ -14,12 +14,14 @@
 }
 
 img{
+    display: block;
     max-width: 100%;
     height: auto;
 }
 
 html{
     box-sizing: border-box;
+    overflow-x: hidden;
     
 
 }
@@ -36,20 +38,24 @@ a{
 }
 .section{
     padding-top: 94px;
-    padding-bottom: 94px;
+
     width: 1600px;
 }
 
+
 .container{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
  }
+ 
 /* Body section style*/
 
 .body{
     font-family: var(--primary-font);
     background-color: var(--white);
     color: var(--black);
+    overflow-x: hidden;
 
 }
 
@@ -184,6 +190,11 @@ a{
     margin-right: 2px;
 }
 
+icon-menu{
+    width:24px;
+    height: 18;
+}
+
 
 /* Hero section style*/
 
@@ -300,6 +311,7 @@ a{
     border-radius: 4px;
     background: var(--dark-white);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-top: 25px;
     margin-bottom: 30px;
@@ -332,6 +344,7 @@ a{
     letter-spacing: 0.03em;
     margin-bottom: 50px;
     text-align: center;
+    padding-top: 94px;
 }
 
 .thumb{
@@ -365,17 +378,18 @@ a{
 
 .team{
     background-color: var(--dark-white);
-    width: 1600px;
-  
+
 }
+
 .team-section{
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
     gap: 30px;
 
-    
 }
+
 .team-title{
     font-family: var(--primary-font);
     font-weight: 700;
@@ -422,6 +436,7 @@ a{
 
 .team-social{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
     margin-bottom: 30px;
@@ -454,6 +469,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     width: 1600px;
     margin-bottom: 94px;
@@ -934,6 +950,10 @@ top: 13px;
 }
 
 
+
+
+
+
 /* Body section portfolio style*/
 
 .body{
@@ -1041,6 +1061,31 @@ top: 13px;
     height: 12px;
     margin-right: 2px;
 }
+
+
+.js-menu-container {
+    display: none;
+    position: fixed;
+    right: 0;
+    background-color: #2196F3;
+    color: #afb1B8;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+
+
+  .is-open {
+    display: block;
+  }
+  
+  .js-open-menu {
+    display: none;
+  }
+  
+  .header__logo-mobile {
+    display: none;
+  }
 
 /* Main part website page style*/
 
@@ -1422,3 +1467,103 @@ right: 20px;
 top: 13px;
 
 }
+
+
+
+@media screen and (max-width: 428px) {
+    
+
+
+ /* Hero section responsive */
+ 
+ .hero-section__title{
+    font-size: 26px;
+    margin-left: 60px;
+    
+}
+
+
+    /* About section responsive */
+    .about{
+        gap: 30px;
+    }
+
+    .about ul{
+    padding-left: 0px;
+    display: block;
+    
+}
+  
+ 
+
+
+
+/* Team section responsive */
+
+.team-section{
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    gap: 30px;
+    
+  }
+.team-title{
+   margin-left: 175px;
+   text-align: start;
+}
+
+
+/* Regular customers responsive */
+
+.customers-title{
+    font-size: 26px;
+    margin-left: 83px;
+}
+
+.customers-section li{
+    flex-direction: column;
+    gap: 30px; 
+
+
+}
+
+
+    
+
+
+/* Footer section responsive */
+
+
+.footer.footer{
+    flex-direction: column;
+    justify-content: center;
+    width: 428px;
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+
+ div .footer-col{
+    justify-content: center;
+}
+.footer-col ul{
+    padding-left: 0;
+   
+}
+.social-title{
+    text-align: center;
+    padding-top: 0px;
+}
+
+
+.footer-col form{
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+
+
+}
+
