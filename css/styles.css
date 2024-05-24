@@ -180,7 +180,6 @@ a{
     margin-right: 2px;
 }
 
-
 .js-open-menu{
     cursor: pointer;
 }
@@ -1429,9 +1428,9 @@ top: 13px;
     0px 1px 3px rgba(0, 0, 0, 0.16);
     position: fixed;
     right: 0;
-    height: 80%;
-    width: 50%;
     padding: 20px;
+    width: 428px;
+    height: auto;
 
  }
 
