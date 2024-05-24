@@ -186,7 +186,7 @@ a{
 }
 
 .is-open {
-    display: block;
+    display: none;
   }
 
 /* Hero section style */
