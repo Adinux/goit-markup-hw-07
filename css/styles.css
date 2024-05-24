@@ -1159,7 +1159,7 @@ top: 13px;
     
 }
 .icon-about{
-    width: 450px;
+    width: 100%;
 
 }
 
@@ -1247,12 +1247,14 @@ top: 13px;
     align-self: center;
 }
 
+
+
  }
 
 
 
 
-@media  screen and (min-width: 429px) and (max-width: 768px) {
+@media  screen and (min-width: 428px) and (max-width: 768px) {
 
     .menu{
         width: 60%;
@@ -1274,11 +1276,10 @@ top: 13px;
 }
 
 /* About section responsive */
-
-.icon-about{
-    width: 354px;
-
+.about {
+    display: block;
 }
+
 
 
 /* What we do section responsive */
@@ -1337,7 +1338,7 @@ top: 13px;
 }
 
 
-@media  screen and (min-width: 769px) and (max-width: 1158px) {
+@media  screen and (min-width: 768px) and (max-width: 1158px) {
 
 .menu{
     width: 40%;
@@ -1425,6 +1426,7 @@ top: 13px;
     padding: 20px;
     width: 100%;
     height: auto;
+    display: none;
 
  }
 
@@ -1433,6 +1435,7 @@ top: 13px;
     margin-top: 48px;
     margin-left: 40px;
     margin-bottom: 306px;
+    
 }
 
 .js-menu-container .nav-container li a {
@@ -1451,6 +1454,7 @@ top: 13px;
     flex-direction: column;
     gap: 32px;
 }
+
 
 .js-menu-container .nav-container li a:hover,
 .js-menu-container .nav-container li a:focus {
@@ -1533,6 +1537,6 @@ top: 13px;
 }
 
 .is-open {
-    display: none;
+    display: block;
   }
 
