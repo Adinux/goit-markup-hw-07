@@ -49,6 +49,7 @@ a{
     font-family: var(--primary-font);
     background-color: var(--white);
     color: var(--black);
+    margin: 0 auto;
     overflow-x: hidden;
 
 }
@@ -93,7 +94,7 @@ a{
     margin: 0 1rem;
 }
 
-.header__navigationu ul li a{
+.header__navigation ul li a{
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 14px;
@@ -1118,6 +1119,7 @@ top: 13px;
 
 
 /* Header section responsive */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -1260,6 +1262,7 @@ top: 13px;
         width: 60%;
     }
 
+
 /*Header section responsive */
 .header__info{
     display: flex;
@@ -1273,7 +1276,32 @@ top: 13px;
 .hero-section__title{
     font-size: 26px;
 
+} 
+
+.hero-section { (rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+    background-image:
+    url(../images/hero-bg-image@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    flex-shrink: 1;
 }
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero-section {
+        background-image: url(../images/hero-bg-image@2x.jpg);
+    }
+}
+
+
+
+
 
 /* About section responsive */
 .about {
@@ -1338,11 +1366,12 @@ top: 13px;
 }
 
 
-@media  screen and (min-width: 768px) and (max-width: 1158px) {
+@media  screen and (min-width: 768px), and (max-width: 1158px) {
 
 .menu{
     width: 40%;
 }
+
 
 /*Header section responsive */
 
@@ -1359,6 +1388,29 @@ top: 13px;
     display: none;
 }
 
+/* Hero section responsive */
+
+.hero-section { (rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+    background-image:
+    url(../images/hero-bg-image@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    flex-shrink: 1;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero-section {
+        background-image: url(../images/hero-bg-image@2x.jpg);
+    }
+}
+
 /* About section responsive */
 
 .about ul{
@@ -1370,12 +1422,10 @@ top: 13px;
 
 /* What we do section responsive */
 
-.occupation__images{
-    flex-wrap: nowrap;
-    justify-content: center;
-    flex-direction: row;
-
+.occupation {
+    display: none;
 }
+  
 
 /* Team section responsive */
 .team-section{
@@ -1406,7 +1456,55 @@ top: 13px;
 
 }
 
+}
 
+
+@media screen and (min-width: 1158px){
+
+    .container {
+        min-width: 1200px;
+        margin: auto;
+        }
+        
+        .section {
+        max-width: 1600px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 94px 0;
+        }
+
+        /* Herosection style responsive */
+        .hero-section { (rgba(47, 48, 58, 0.4), 
+            rgba(47, 48, 58, 0.4)),
+            background-image:
+            url(../images/hero-bg-image@1x.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            flex-shrink: 1;
+        }
+        
+
+        .hero-section { (rgba(47, 48, 58, 0.4), 
+            rgba(47, 48, 58, 0.4)),
+            background-image:
+            url(../images/hero-bg-image@1x.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 600px;
+           
+        }
+        
+       
+/* What we do section responsive */
+.occupation{
+    display: flex;
+    flex-direction: column;
+}
 
 
 }
@@ -1425,10 +1523,21 @@ top: 13px;
     right: 0;
     padding: 20px;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: none;
 
  }
+
+ .button--toggle-menu svg {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
 
 
 .js-menu-container .nav-container {
