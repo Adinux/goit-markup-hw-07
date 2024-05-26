@@ -195,7 +195,7 @@ a{
     rgba(47, 48, 58, 0.5),
     rgba(47, 48, 58, 0.3)
     ), image-set( url(../images/hero-bg-image@1x.jpg) 1x,
-    url(../images/hero-bg-image@2x.jpg) 2x) ;
+    url(../images/hero-bg-image@2x.jpg) 2x);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1046,8 +1046,7 @@ top: 13px;
 .projects-text, .projects1-text{
     text-align: left;
     margin-bottom: 0px;
-    margin-top: 0px;
-   
+    margin-top: 0px; 
 }
 
 .portfolio-cards:hover{
@@ -1146,10 +1145,6 @@ top: 13px;
 
 
 /* Hero section responsive */
-.hero-section{
-    background-image:
-
-}
 .hero-section__title{
         font-size: 26px;
 
@@ -1392,7 +1387,8 @@ top: 13px;
 
 /* Hero section responsive */
 
-.hero-section { (rgba(47, 48, 58, 0.4), 
+.hero-section { 
+    background: linear-gradient(rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)),
     background-image:
     url(../images/hero-bg-image@1x.jpg);
@@ -1400,7 +1396,7 @@ top: 13px;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 600px;
     flex-shrink: 1;
 }
 
@@ -1474,33 +1470,6 @@ top: 13px;
         overflow: hidden;
         padding: 94px 0;
         }
-
-        /* Herosection style responsive */
-        .hero-section { (rgba(47, 48, 58, 0.4), 
-            rgba(47, 48, 58, 0.4)),
-            background-image:
-            url(../images/hero-bg-image@1x.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 600px;
-            flex-shrink: 1;
-        }
-        
-
-        .hero-section { (rgba(47, 48, 58, 0.4), 
-            rgba(47, 48, 58, 0.4)),
-            background-image:
-            url(../images/hero-bg-image@1x.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 600px;
-           
-        }
-        
        
 /* What we do section responsive */
 .occupation{
