@@ -1195,11 +1195,10 @@ top: 13px;
 
 .footer.footer{
     flex-direction: column;
-    justify-content: center;
-  
-    
+    justify-content: center; 
     
 }
+
 .row{
     flex-direction: column;
     text-align: center;
